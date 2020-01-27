@@ -130,7 +130,7 @@ Gridcoin - Blockchain, Economic Protocol, and Incentivization Layer
                              ---
             Distributed Computing Platform - BOINC
                              ---
-     Participant Computer Participant Mobile Participant Server
+  Participant Computer / Participant Mobile / Participant Server
 ```
 
 ## The Gridcoin Network
