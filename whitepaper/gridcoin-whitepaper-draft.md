@@ -120,10 +120,10 @@ educate the public on distributed computing and science. Gridcoin utilizes distr
 democratized incentive technology to significantly increase the computation potential of the
 BOINC network. To achieve this, the Gridcoin distributed ledger implementation incorporates
 records of participant computation contributions to BOINC projects elected for inclusion by
-members of the Gridcoin network (​pg. 7​). A significant portion of the currency minted by the
+members of the Gridcoin network​ (see [The Gridcoin Whitelist](#the-gridcoin-whitelist)). A significant portion of the currency minted by the
 Gridcoin protocol is directly distributed to these participants based on their relative computation
 contributions. Additionally, the Gridcoin currency minting mechanism incentivizes participants to
-evenly distribute their crunching power across the included BOINC projects (​pg. 13​).
+evenly distribute their crunching power across the included BOINC projects (see [Gridcoin Incentives](#gridcoin-incentives)).
 
 ```text
 Gridcoin - Blockchain, Economic Protocol, and Incentivization Layer
@@ -275,7 +275,7 @@ create a poll with a proposal or reimbursement request.
 
 Another direct role the polling process serves is to manage Gridcoin’s list of BOINC projects
 approved for inclusion in Gridcoin’s record of BOINC project contributions, which is fundamental
-to Gridcoin’s research computation contribution structure (​pg. 7​).
+to Gridcoin’s research computation contribution structure (see [The Gridcoin Whitelist](#the-gridcoin-whitelist)).
 
 There are currently 7 types of polls. Each poll type has unique requirements and validation
 parameters formulated from prior poll experiences and prior Gridcoin network polls. The
@@ -351,7 +351,7 @@ The whitelist process also adds two incentivized education layers to the system.
     BOINC projects on or seeking a place on the Gridcoin whitelist, helping to ensure that
     project research quality remains high and results are not faked.
 
-These incentives are detailed in the section titled ​ _process-based incentives_ ​ (​pg. 13​).
+These incentives are detailed in the section titled ​ _process-based incentives_ ​(see [Gridcoin Incentives](#gridcoin-incentives)).
 
 #### Share of Network Computation Power
 
@@ -359,7 +359,7 @@ Gridcoin’s current system produces an expected 1/n percentage of the network�
 power directed to each whitelisted project, where ​ _n_ ​ is equal to the number of whitelisted
 projects.
 
-This structure is detailed in the section titled ​ _process-based incentives_ ​ (​pg. 13​).
+This structure is detailed in the section titled ​ _process-based incentives_ ​(see [Gridcoin Incentives](#gridcoin-incentives)).
 
 ### Project Management (Whitelist/Greylist)
 
