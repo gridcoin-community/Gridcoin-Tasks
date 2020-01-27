@@ -1,57 +1,4 @@
-- Introduction
-   - Gridcoin
-   - The Berkeley Open Infrastructure for Network Computing (BOINC)
-   - Computation Power
-   - Results
-- The Gridcoin Network and Protocol Overview
-- The Gridcoin Network
-   - Organization
-   - Participants
-      - Crunchers
-      - Stakers
-      - Statistics Providers
-      - Oracles
-   - Currency
-   - Protocol
-   - Economics
-   - The Gridcoin Foundation
-   - Voting
-   - The Gridcoin Whitelist
-      - Technical Requirements
-      - Economic Rationale
-      - Share of Network Computation Power
-   - Project Management (Whitelist/Greylist)
-- The Gridcoin Blockchain and Protocol
-   - Blockchain Consensus
-   - The Gridcoin Oracle and Superblocks
-      - The Gridcoin Oracle
-      - Process Overview
-   - Beacons
-   - Magnitude
-   - Research Savings Accounts (RSA)
-   - Distributing Participant Earned Research Rewards (ERR)
-   - Side-Staking
-- Gridcoin Incentives
-   - Protocol-based Incentives
-   - Process-based Incentives
-
-
-```
-Crunching Contribution Distribution 13
-Active Education Through the Gridcoin Whitelist Process 13
-Passive Education Through the Gridcoin Whitelist Process 13
-Passive Education Through Blockchain Principles 14
-```
-**Gridcoin Values 14**
-
-```
-Open Source 14
-Open Data 14
-Open Access 15
-Open Education 15
-Decentralized Operation 15
-```
-**Additional Resources 15**
+# Gridcoin Whitepaper
 
 ## Introduction
 
@@ -76,8 +23,6 @@ solar panels, along with many others. While BOINC has been used primarily for sc
 mathematics, it can host data from any open or commercial field so long as the data can be
 formatted for BOINC’s processes. Examples of projects include tasks on engineering,
 cryptography, rendering, weather and climate prediction, as well as social, market, and resource
-
-
 analytics. Enigma@home, for example, worked to break remaining WWII messages encrypted
 by an Enigma machine.
 
@@ -112,13 +57,11 @@ Gridcoin protocol is directly distributed to these participants based on their r
 contributions. Additionally, the Gridcoin currency minting mechanism incentivizes participants to
 evenly distribute their crunching power across the included BOINC projects (​pg. 13​).
 
-```
+```text
 Gridcoin - Blockchain, Economic Protocol, and Incentivization Layer
-```
-```
-Distributed Computing Platform - BOINC
-```
-```
+                             ---
+            Distributed Computing Platform - BOINC
+                             ---
 Participant Computer Participant Mobile Participant Server
 ```
 
@@ -130,7 +73,8 @@ Conservatively estimated, there are 13,500 active network participant’s incent
 as of June 17th, 2019. According to statistics collected from BOINCStats^1 , the Gridcoin network
 offers between 5 and 8 total PFLOPs across all Gridcoin whitelisted BOINC projects.
 
-Gridcoin FLOP contribution is calculated based on the sum of the network’s percent RAC (recently accumulated credit, as computed by the BOINC system) contribution to each project multiplied by the FLOPs presented on each project’s server status
+Gridcoin FLOP contribution is calculated based on the sum of the network’s percent RAC (recently accumulated
+credit, as computed by the BOINC system) contribution to each project multiplied by the FLOPs presented on each project’s server status
 page.
 
 ### Organization
@@ -159,8 +103,7 @@ Stakers are additionally responsible for forming consensus on statistics publish
 along with executing the superblock algorithm that calculates and publishes each participant’s
 earned research rewards.
 
-(^1) real-time stats at https://boincstats.com/en/stats/-1/team/detail/118094994/overview
-
+(^1) real-time stats at <https://boincstats.com/en/stats/-1/team/detail/118094994/overview>
 
 #### Statistics Providers
 
@@ -189,19 +132,19 @@ consensus around the system code.
 Gridcoin’s GRC has evolved through several protocol shifts. Below are the current economic
 rules of the system.
 
-**Total Supply as of July 1st 2019**
+#### Total Supply as of July 1st 2019
 
-#### 420,000,000 GRC
+-> **420,000,000 GRC**
 
-**Total Minted per Year**
+#### Total Minted per Year
 
-#### 13,724,000 GRC
+-> **13,724,000 GRC**
 
-**Distributed to Crunchers per Year**
+#### Distributed to Crunchers per Year
 
-#### 10,293,000 GRC
+-> **10,293,000 GRC**
 
-**Distributed to Stakers per Year**
+#### Distributed to Stakers per Year
 
 #### 3,431,000 GRC
 
@@ -250,8 +193,6 @@ ultimately exercise final decision-making authority.
 To facilitate unified decision making among nodes, the Gridcoin network utilizes an open and
 transparent blockchain-based polling mechanism accessible through the wallet software GUI.
 Polls serve to inform participants on decisions, to give developers direction on where the
-
-
 network wants to go, and to seek common ground or otherwise mediate arguments on network
 protocol and operation.
 
@@ -284,7 +225,7 @@ These categorizations assist in defining the issue at hand and increase the like
 reaching a clear and definitive result. Details on the specific types of polls are beyond the scope
 of this document and should be viewed on GitHub at the following link:
 
-https://github.com/gridcoin-community/Gridcoin-Tasks/issues/
+<https://github.com/gridcoin-community/Gridcoin-Tasks/issues/>
 
 ### The Gridcoin Whitelist
 
@@ -294,7 +235,6 @@ periodically polled to request updated figures of contributor Recent Average Cre
 
 To qualify for inclusion in the Gridcoin network’s “whitelist” of BOINC projects whose participants
 are rewarded relative to their RAC contributions, a project must satisfy a number of criteria.
-
 
 These criteria are designed to ensure that the projects are legitimate scientific projects offering
 a fair chance for all participants to receive work and credit, and that they are not
@@ -315,7 +255,7 @@ such as project website, forums, and contact information.
 
 A full list of technical requirements can be found on GitHub at the following link:
 
-https://github.com/gridcoin-community/Gridcoin-Tasks/issues/
+<https://github.com/gridcoin-community/Gridcoin-Tasks/issues/>
 
 #### Economic Rationale
 
@@ -337,12 +277,8 @@ The whitelist process also adds two incentivized education layers to the system.
 
 1. The democratic nature of the whitelisting process incentivizes BOINC projects to
     educate network participants on the details and value of their research to increase the
-
-
-```
-chances of network participants voting in favor of inclusion of the project to the Gridcoin
-network.
-```
+    chances of network participants voting in favor of inclusion of the project to the Gridcoin
+    network.
 2. The whitelisting process combined with cryptoeconomic principles incentivizes network
     participants to remain literate and aware of the research, capabilities, and execution of
     BOINC projects on or seeking a place on the Gridcoin whitelist, helping to ensure that
@@ -384,7 +320,6 @@ computation to approved projects. It also serves to lessen the need for de-white
 technical reasons. This focuses whitelist removal polls on the management and merits of the
 project in question.
 
-
 ## The Gridcoin Blockchain and Protocol
 
 ### Blockchain Consensus
@@ -396,7 +331,7 @@ maintain that security.
 
 A detailed overview of the Gridcoin PoS consensus protocol can be found at the link below.
 
-https://drive.google.com/file/d/1NwEBSKuG2IvZXPvzbTEvZLpaN2JCP_nK/view
+<https://drive.google.com/file/d/1NwEBSKuG2IvZXPvzbTEvZLpaN2JCP_nK/view>
 
 ### The Gridcoin Oracle and Superblocks
 
@@ -422,9 +357,7 @@ three additional purposes:
 
 #### Process Overview
 
-```
-Superblocks
-```
+##### Superblocks
 
 1. **A superblock contains** ​ the officially sanctioned network statistics encoded in
     the blockchain.
@@ -439,9 +372,8 @@ Superblocks
     are only collected from users who have given permission to allow their statistics
     to be used for this purpose.
 
-```
-Oracle Node and Project Server
-```
+##### Oracle Node and Project Server
+
 1. **Six Oracle nodes connect** ​ to each project server 4 hours before a superblock is
     due.
 2. **Gridcoin team statistics files** ​ are downloaded once and the information is
@@ -453,7 +385,7 @@ Oracle Node and Project Server
 
 A full write-up on this process can be found at the link below.
 
-https://docs.google.com/document/d/1SQEGDPGqnb9as9XUraoLqNn7uTQSrabmHqEXwFaxiGE/ed
+<https://docs.google.com/document/d/1SQEGDPGqnb9as9XUraoLqNn7uTQSrabmHqEXwFaxiGE/ed>
 it?usp=sharing
 
 ### Beacons
@@ -461,7 +393,6 @@ it?usp=sharing
 A Gridcoin beacon ties a Gridcoin address’ public key with a BOINC CPID. Beacons are
 necessary to track a participant’s magnitude and release the appropriate earned research
 rewards to the corresponding participant.
-
 
 ### Magnitude
 
@@ -487,9 +418,8 @@ block.
 
 ### Side-Staking
 
-```
 Concept and initial implementation credit: PINK and the Pinkcoin community.
-```
+
 Side-staking enables automated percentage-based splitting and transfer of earned staking and
 research rewards. This mechanism offers security to major GRC network security stakeholders
 while enabling automated funding of development, initiatives, entities, and businesses, and
@@ -498,14 +428,13 @@ automated donation to external entities accepting GRC.
 Gridcoin adopted and implemented a unique side-staking mechanism based on the concept first
 implemented by PINK.
 
-https://github.com/gridcoin-community/Gridcoin-Research/pull/
+<https://github.com/gridcoin-community/Gridcoin-Research/pull/>
 
 ## Gridcoin Incentives
 
 Gridcoin is a multi-incentive blockchain uniquely capable of incentivizing any leaderboard-style
 ledger at an emissions level. The network’s current and foreseeable incentive focus is on data
 analysis, science and scientific contributions, research, scientific inclusion, and education.
-
 
 ### Protocol-based Incentives
 
@@ -550,8 +479,6 @@ and informative to the general population of the Gridcoin network and not solely
 
 The Gridcoin whitelist is a sub-ledger of projects approved by network participants. Each project
 represents the values of the Gridcoin network at large. Each project on the whitelist adds or
-
-
 detracts value to or from the sub-ledger based on the project’s perceived social impact or
 contribution to science and its foundations.
 
@@ -573,7 +500,7 @@ participants on money and monetary policy, protocol, and process.
 A democratized system based on financial technology and science, such as Gridcoin, educates
 its participants on the policies, protocols, and processes of both money and science.
 
-# Gridcoin Values
+## Gridcoin Values
 
 Gridcoin is an open-source organization with no central decision making authority. While
 flexibility is required in relationships and partnerships, these base principles must drive ultimate
@@ -594,7 +521,6 @@ issues in the code before they present in production.
 The data on the blockchain is accessible either through the wallet software or through
 web-based blockchain explorers. As a global open-ledger system, blockchain technology keeps
 the data both open and secure.
-
 
 Gridcoin supports the open publishing of data which in turn allows more people to analyze and
 otherwise experiment with the data.
@@ -632,58 +558,55 @@ Decentralization solves the single point of failure problem, allows for diversit
 participation in decision-making, provides equality, and limits encroachment by centralized
 authorities
 
-# Additional Resources
+## Additional Resources
 
-**Website and Wallet Software**
+### Website and Wallet Software
+
 Website and Wallets
 
+<https://gridcoin.us>
 
-https://gridcoin.us
+### Development Repositories
 
-**Development Repositories**
 Gridcoin Research Client
 [http://github.com/gridcoin-community/Gridcoin-Research/](http://github.com/gridcoin-community/Gridcoin-Research/)
 
 Gridcoin Research Community - For non-wallet based projects
-https://github.com/gridcoin-community
+<https://github.com/gridcoin-community>
 
-**Block Explorers**
+### Block Explorers
+
 Gridcoinexplorer
-https://grcexplorer.neuralminer.io
+<https://grcexplorer.neuralminer.io>
 
 Gridcoin.Network
-https://gridcoin.network
+<https://gridcoin.network>
 
 Gridcoinstats
-https://www.gridcoinstats.eu/
+<https://www.gridcoinstats.eu/>
 
-**Social Media**
+### Social Media
+
 Twitter
-https://twitter.com/GridcoinNetwork
+<https://twitter.com/GridcoinNetwork>
 
 Reddit
-https://reddit.com/r/gridcoin
+<https://reddit.com/r/gridcoin>
 
 Discord
-https://discord.gg/jf9XX4a
+<https://discord.gg/jf9XX4a>
 
 Slack
-https://join.slack.com/t/teamgridcoin/shared_invite/enQtMjk2NTI4MzAwMzg0LTUzMmY0YjdiNz
-YxYzQ0MDc3MGE1NjQ3Nzg2NWMzZTUzMjAwZjdhMWI1YWUzMDE4YzQyZjVjMjMzOTc1M
-RmMmM
+<https://join.slack.com/t/teamgridcoin/shared_invite/enQtMjk2NTI4MzAwMzg0LTUzMmY0YjdiNzYxYzQ0MDc3MGE1NjQ3Nzg2NWMzZTUzMjAwZjdhMWI1YWUzMDE4YzQyZjVjMjMzOTc1MRmMmM>
 
 Medium
-https://medium.com/@gridcoinnetwork
+<https://medium.com/@gridcoinnetwork>
 
 Steemit
-https://steemit.com/created/gridcoin
+<https://steemit.com/created/gridcoin>
 
 Facebook
-https://www.facebook.com/gridcoins
+<https://www.facebook.com/gridcoins>
 
 Telegram
-
-
-https://t.me/gridcoin
-
-
+<https://t.me/gridcoin>
