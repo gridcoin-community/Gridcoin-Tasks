@@ -226,7 +226,7 @@ See below for definition of terms.
 
 ##### MI
 
-MI = Monetary Inflation. There is no ultimate cap on the number of GRC to be minted. A static 1,456,000 GRC are minted every year which means that the monetary inflation rate is constantly decreasing toward 0.
+MI = Monetary Inflation. There is no ultimate cap on the number of GRC to be minted. A static 1,456,000 GRC are minted every year which means that the monetary inflation rate is constantly decreasing toward zero (0).
 
 ##### CBR
 
