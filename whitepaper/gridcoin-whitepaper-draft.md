@@ -494,7 +494,7 @@ automated donation to external entities accepting GRC.
 Gridcoin adopted and implemented a unique side-staking mechanism based on the concept first
 implemented by PINK.
 
-<https://github.com/gridcoin-community/Gridcoin-Research/pull/>
+<https://github.com/gridcoin-community/Gridcoin-Research/pull/1265>
 
 ## Gridcoin Incentives
 
