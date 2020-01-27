@@ -101,7 +101,7 @@ top-ranked supercomputer in June 2019, IBM’s Summit, hosts 143 petaFLOPS. IBM�
 ranked second, hosts 94 petaFLOPS. The Sunway TaihuLight hosts 93, the Tianhe-2 hosts 61,
 and Dell’s Frontera hosts about 23.5 petaFLOPS.
 
-This establishes BOINC as the world’s fourth largest supercomputer by FLOPS
+This establishes BOINC as the world’s fourth largest supercomputer by FLOPS.
 
 Gridcoin contributes 4.5 petaFLOPS of processing power to BOINC, making up 18.8% of
 BOINC’s processing power.
