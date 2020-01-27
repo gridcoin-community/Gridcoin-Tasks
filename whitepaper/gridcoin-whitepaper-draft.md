@@ -293,7 +293,7 @@ These categorizations assist in defining the issue at hand and increase the like
 reaching a clear and definitive result. Details on the specific types of polls are beyond the scope
 of this document and should be viewed on GitHub at the following link:
 
-<https://github.com/gridcoin-community/Gridcoin-Tasks/issues/>
+<https://github.com/gridcoin-community/Gridcoin-Tasks/issues/227>
 
 ### The Gridcoin Whitelist
 
@@ -322,7 +322,7 @@ must:
 
 A full list of technical requirements can be found on GitHub at the following link:
 
-<https://github.com/gridcoin-community/Gridcoin-Tasks/issues/>
+<https://github.com/gridcoin-community/Gridcoin-Tasks/issues/227>
 
 #### Economic Rationale
 
