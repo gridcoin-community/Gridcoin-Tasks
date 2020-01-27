@@ -208,7 +208,27 @@ rules of the system.
 
 ### Chart of GRC Monetary Inflation
 
-(to be inserted)
+See below for definition of terms.
+
+(Graphic of chart to be inserted)
+
+#### Definition of Terms
+
+##### CBR
+
+CBR, Constant Block Reward, incentivizes people to maintain a balance of GRC to help secure the network. There is technical and economic significance to CBR. The economic significance comes in the form of GRC lock-up -- it is similar to how banks reward people with interest for keeping their money in a bank. Essentially, a 10 GRC reward for staking a block (a constant reward for each block) incentivizes people to hold GRC. This type of holding of the GRC helps ensure a healthy network because of the technical ways proof-of-stake works. Similar to how holding money in a bank helps ensure that banks can continue to stimulate economic activity.
+
+The more GRC one holds, the more blocks they will stake, and the more GRC they will earn. Similar to logic: the more $$$ I put in the bank, the more $$$ I will earn through interest.
+
+##### MI
+
+MI = Monetary Inflation. Also correct, there is no ultimate cap on the number of GRC to be minted. A static 1,456,000 GRC are minted every year which means that the monetary inflation rate is constantly decreasing toward 0.
+
+##### ERR
+
+ERR = Earned Research Rewards. ERR is the second way to receive GRC from the protocol, the first being the Staking Rewards mechanism, CBR.
+
+View it like so: The protocol mints a chunk of GRC to distribute to network participants. Currently, the two network participants are Stakers and Crunchers. Stakers get CBR and Crunchers get ERR. The chunk of GRC is split with 75% going to Crunchers and 25% going to Stakers.
 
 ### The Gridcoin Foundation
 
