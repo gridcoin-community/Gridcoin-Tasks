@@ -228,7 +228,7 @@ See below for definition of terms.
 
 CBR = Constant Block Reward.  CBR incentivizes people to maintain a balance of GRC to help secure the network. There is technical and economic significance to CBR. The economic significance comes in the form of GRC lock-up -- it is similar to how banks reward people with interest for keeping their money in a bank. Essentially, a 10 GRC reward for staking a block (a constant reward for each block) incentivizes people to hold GRC. This type of holding of the GRC helps ensure a healthy network because of the technical ways proof-of-stake works. Similar to how holding money in a bank helps ensure that banks can continue to stimulate economic activity.
 
-The more GRC one holds, the more blocks they will stake, and the more GRC they will earn. Similar to logic: the more $$$ I put in the bank, the more $$$ I will earn through interest.
+The more GRC one holds and keeps available for staking on an active GridCoin full node, the more blocks they will stake, and the more GRC they will earn. Similar to logic: the more $$$ I put in the bank, the more $$$ I will earn through interest.
 
 ##### MI
 
@@ -431,7 +431,7 @@ three additional purposes:
 2. **A superblock is due** ​ 24 hours after the previous one is staked.
 3. **Statistic consensus and superblock staking can take** ​ from a few minutes
     after the process begins to two hours after the superblock is due.
-4. **Oracle nodes and the network retain** ​ ​ **48 hours** ​ of filtered statistics from the
+4. **Oracle nodes and the network retain** ​ **48 hours**​ of filtered statistics from the
     oracles for cross-checking by the nodes to ensure no corruption by an oracle
     node occurred.
 5. **Oracle nodes can use username/password authentication** ​ for access to the
