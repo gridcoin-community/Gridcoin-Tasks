@@ -130,8 +130,7 @@ Conservatively estimated, there are 13,500 active network participant’s incent
 as of June 17th, 2019. According to statistics collected from BOINCStats^1 , the Gridcoin network
 offers between 5 and 8 total PFLOPs across all Gridcoin whitelisted BOINC projects.
 
-Gridcoin FLOP contribution is calculated based on the sum of the network’s percent RAC
-contribution to each project multiplied by the FLOPs presented on each project’s server status
+Gridcoin FLOP contribution is calculated based on the sum of the network’s percent RAC (recently accumulated credit, as computed by the BOINC system) contribution to each project multiplied by the FLOPs presented on each project’s server status
 page.
 
 ### Organization
@@ -148,15 +147,15 @@ There are four technical participants in the Gridcoin network.
 
 #### Crunchers
 
-Crunchers are nodes with registered beacons. They contribute computation power to whitelisted
+Crunchers are nodes with registered beacons (see [Beacons](#beacons)). They contribute computation power to whitelisted
 BOINC projects.
 
 #### Stakers
 
 Stakers are nodes actively securing the Gridcoin blockchain. They maintain an active balance in
-an attempt to be chosen as a block producer.
+an attempt to be chosen as a block producer.  A block producer is a node that adds a new block onto the blockchain.
 
-Stakers are additionally responsible for forming consensus on statistics published by Oracles
+Stakers are additionally responsible for forming consensus on statistics published by Oracles (see [Oracles](#oracles))
 along with executing the superblock algorithm that calculates and publishes each participant’s
 earned research rewards.
 
@@ -270,7 +269,7 @@ approved for inclusion in Gridcoin’s record of BOINC project contributions, wh
 to Gridcoin’s research computation contribution structure (​pg. 7​).
 
 There are currently 7 types of polls. Each poll type has unique requirements and validation
-parameters formulated from prior poll experiences and bootstrapped by prior network polls. The
+parameters formulated from prior poll experiences and prior Gridcoin network polls. The
 poll types are:
 
 1. Opinion/Casual
