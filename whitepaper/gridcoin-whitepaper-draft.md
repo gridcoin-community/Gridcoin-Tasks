@@ -614,11 +614,11 @@ whitelists projects of all size and scope.
 
 ## Decentralized Operation
 
-‘A decentralized system is where some decisions by the agents are made without centralized
+"A decentralized system is where some decisions by the agents are made without centralized
 control or processing. An important property of agent systems is the degree of connectivity or
-connectedness between the agents.’
+connectedness between the agents."
 
-- Norman L. Johnson
+  \- Norman L. Johnson
 
 Decentralization solves the single point of failure problem, allows for diversity, larger
 participation in decision-making, provides equality, and limits encroachment by centralized
