@@ -24,5 +24,5 @@ jobs:
     - name: Create the pdf-format whitepaper from the markdown source code
       run: |
         cd ${{ github.workspace }}/whitepaper && \
-        mdpdf ${{ WHITEPAPER_FILE_NAME_ROOT }}.md && \
-        mv ${{ WHITEPAPER_FILE_NAME_ROOT }}.pdf ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}/${{ WHITEPAPER_FILE_NAME_ROOT }}.pdf
+        mdpdf ${{ env.WHITEPAPER_FILE_NAME_ROOT }}.md && \
+        mv ${{ env.WHITEPAPER_FILE_NAME_ROOT }}.pdf ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}/${{ env.WHITEPAPER_FILE_NAME_ROOT }}.pdf
