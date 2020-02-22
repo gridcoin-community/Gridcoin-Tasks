@@ -13,12 +13,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Update package manager and install o/s level dependencies
       run: sudo apt update && sudo apt install nodejs npm
-    - name: Workaround Part 1 for install issue https://github.com/BlueHatbRit/mdpdf/issues/69 
-      run: sudo mkdir -p /usr/local/lib/node_modules/mdpdf/node_modules/puppeteer
-    - name: Workaround Part 2 for install issue https://github.com/BlueHatbRit/mdpdf/issues/69 
-      run: sudo chmod -R 777 /usr/local/lib/node_modules/mdpdf/node_modules/puppeteer
     - name: Install secondary dependencies
-      run: sudo npm install mdpdf -g
+      run: sudo npm install --unsafe-perm mdpdf -g
     - name: Checkout the project source code
       run: git checkout
     - name: List current workspace checkout
