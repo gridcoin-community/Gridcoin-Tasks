@@ -21,10 +21,10 @@ jobs:
     - name: List current workspace checkout
       run: ls -ail ${{ github.workspace }}/whitepaper/ && git status
     - name: Create the build directory
-      run: mkdir ${{ github.workspace }}/build
+      run: mkdir -p ${{ github.workspace }}/build/whitepaper/formats
     - name: Create pdf-format Whitepaper from the markdown source code
       run: |
         cd ${{ github.workspace }}/whitepaper && \
         pandoc --latex-engine=xelatex \
-          ./whitepaper/gridcoin-whitepaper-draft.md \
-          -o ${{ github.workspace }}/build/gridcoin-whitepaper-draft.pdf
+          ./gridcoin-whitepaper-draft.md \
+          -o ${{ github.workspace }}/build/whitepaper/formats/gridcoin-whitepaper-draft.pdf
