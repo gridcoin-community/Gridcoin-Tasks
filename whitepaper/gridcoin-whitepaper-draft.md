@@ -220,7 +220,7 @@ rules of the system.
 
 See below for definition of terms.
 
-![Gridcoin Monetary Inflation Rate](./resources/images/gridcoin-monetary-inflation-rate.jpg)
+![Gridcoin Monetary Inflation Rate](./resources/images/gridcoin-monetary-inflation-rate.png)
 
 #### Definition of Terms
 
