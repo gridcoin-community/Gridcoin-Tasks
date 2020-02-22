@@ -26,7 +26,7 @@ jobs:
       run: |
         cd ${{ github.workspace }}/whitepaper && \
         mdpdf ${{ env.WHITEPAPER_FILE_NAME_ROOT }}.md && \
-        mv ${{ env.WHITEPAPER_FILE_NAME_ROOT }}.pdf ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}/${{ env.WHITEPAPER_FILE_NAME_ROOT }}.pdf
+        mv ${{ env.WHITEPAPER_FILE_NAME_ROOT }}.pdf ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}/${{ env.WHITEPAPER_ARTIFACT_NAME }}.pdf
     - uses: actions/upload-artifact@v1
       with:
         name: ${{ env.WHITEPAPER_ARTIFACT_NAME }}
