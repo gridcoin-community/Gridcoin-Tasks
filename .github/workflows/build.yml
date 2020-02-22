@@ -29,5 +29,5 @@ jobs:
         mv ${{ env.WHITEPAPER_FILE_NAME_ROOT }}.pdf ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}/${{ env.WHITEPAPER_FILE_NAME_ROOT }}.pdf
     - uses: actions/upload-artifact@v1
       with:
-        name: ${{ WHITEPAPER_ARTIFACT_NAME }}
+        name: ${{ env.WHITEPAPER_ARTIFACT_NAME }}
         path: ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}
