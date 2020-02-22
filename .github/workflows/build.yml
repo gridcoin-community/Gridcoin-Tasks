@@ -24,6 +24,7 @@ jobs:
       run: mkdir ${{ github.workspace }}/build
     - name: Create pdf-format Whitepaper from the markdown source code
       run: |
+        cd ${{ github.workspace }}/whitepaper && \
         pandoc --latex-engine=xelatex \
-          ${{ github.workspace }}/whitepaper/gridcoin-whitepaper-draft.md \
+          ./whitepaper/gridcoin-whitepaper-draft.md \
           -o ${{ github.workspace }}/build/gridcoin-whitepaper-draft.pdf
