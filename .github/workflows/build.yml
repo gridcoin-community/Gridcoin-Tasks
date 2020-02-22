@@ -16,7 +16,7 @@ jobs:
     - name: Workaround Part 1 for install issue https://github.com/BlueHatbRit/mdpdf/issues/69 
       run: sudo mkdir -p /usr/local/lib/node_modules/mdpdf/node_modules/puppeteer
     - name: Workaround Part 2 for install issue https://github.com/BlueHatbRit/mdpdf/issues/69 
-      run: chmod -R 777 /usr/local/lib/node_modules/mdpdf/node_modules/puppeteer
+      run: sudo chmod -R 777 /usr/local/lib/node_modules/mdpdf/node_modules/puppeteer
     - name: Install secondary dependencies
       run: sudo npm install mdpdf -g
     - name: Checkout the project source code
