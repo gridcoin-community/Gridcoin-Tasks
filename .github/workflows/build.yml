@@ -12,9 +12,10 @@ jobs:
     - name: Notice about possible future improvements to this build
       run: |
         echo "Regarding https://github.com/typora/typora-issues/issues/2146: Once that fix \
-        goes into the apt repo entry for pandoc, consider using --pdf-engine=xelatex option."
+        goes into the apt repo entry for pandoc, consider using the '--pdf-engine=xelatex' \
+        in place of the '--latex-engine=xelatex' option."
     - name: Update package manager and install pandoc
-      run: sudo apt update && sudo apt install pandoc && sudo apt install pandoc texlive
+      run: sudo apt update && sudo apt install pandoc && sudo apt install pandoc texlive texlive-xetex
     - name: Checkout the project source code
       run: git checkout
     - name: List current workspace checkout
