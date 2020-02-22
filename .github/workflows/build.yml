@@ -6,25 +6,23 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      WHITEPAPER_FORMATS_DIR: whitepaper/formats
+      WHITEPAPER_FILE_NAME_ROOT: gridcoin-whitepaper-draft
     steps:
     - uses: actions/checkout@v2
-    - name: Notice about possible future improvements to this build
-      run: |
-        echo "Regarding https://github.com/typora/typora-issues/issues/2146: Once that fix \
-        goes into the apt repo entry for pandoc, consider using the '--pdf-engine=xelatex' \
-        in place of the '--latex-engine=xelatex' option."
-    - name: Update package manager and install pandoc
-      run: sudo apt update && sudo apt install pandoc && sudo apt install pandoc texlive texlive-xetex
+    - name: Update package manager and install o/s level dependencies
+      run: sudo apt update && sudo apt install pandoc && sudo apt install node
+    - name: Install secondary dependencies
+      run: sudo npm install mdpdf -g
     - name: Checkout the project source code
       run: git checkout
     - name: List current workspace checkout
       run: ls -ail ${{ github.workspace }}/whitepaper/ && git status
     - name: Create the build directory
-      run: mkdir -p ${{ github.workspace }}/build/whitepaper/formats
-    - name: Create pdf-format Whitepaper from the markdown source code
+      run: mkdir -p ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}
+    - name: Create the pdf-format whitepaper from the markdown source code
       run: |
         cd ${{ github.workspace }}/whitepaper && \
-        pandoc --latex-engine=xelatex \
-          ./gridcoin-whitepaper-draft.md \
-          -o ${{ github.workspace }}/build/whitepaper/formats/gridcoin-whitepaper-draft.pdf
+        mdpdf ${{ WHITEPAPER_FILE_NAME_ROOT }}.md && \
+        mv ${{ WHITEPAPER_FILE_NAME_ROOT }}.pdf ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}/${{ WHITEPAPER_FILE_NAME_ROOT }}.pdf
