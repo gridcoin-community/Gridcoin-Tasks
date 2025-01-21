@@ -1,3 +1,5 @@
+![CI](https://github.com/nottoseethesun/Gridcoin-Tasks/workflows/CI/badge.svg)
+
 # Gridcoin-Tasks
 
 The Gridcoin-Tasks repository is for long-term ideas, things relating to the larger Gridcoin community, or other issues that don't belong in any other repository

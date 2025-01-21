@@ -220,7 +220,7 @@ rules of the system.
 
 See below for definition of terms.
 
-(@todo: Graphic of chart to be inserted)
+![Gridcoin Monetary Inflation Rate](./resources/images/gridcoin-monetary-inflation-rate.png)
 
 #### Definition of Terms
 
@@ -230,9 +230,9 @@ MI = Monetary Inflation. There is no ultimate cap on the number of GRC to be min
 
 ##### CBR
 
-CBR = Constant Block Reward.  CBR incentivizes people to maintain a balance of GRC to help secure the network. There is technical and economic significance to CBR. The economic significance comes in the form of GRC lock-up -- it is similar to how banks reward people with interest for keeping their money in a bank. Essentially, a 10 GRC reward for staking a block (a constant reward for each block) incentivizes people to hold GRC. This type of holding of the GRC helps ensure a healthy network because of the technical ways proof-of-stake works. Similar to how holding money in a bank helps ensure that banks can continue to stimulate economic activity.
+CBR = Constant Block Reward.  CBR incentivizes people to maintain a balance of GRC to help secure the network. There is technical and economic significance to CBR. The economic significance comes in the form of GRC lock-up -- it is similar to how banks reward people with interest for keeping their money in a bank. Essentially, a 10 GRC reward for staking a block (a constant reward for each block) incentivizes people to hold GRC. This type of holding of the GRC helps ensure a healthy network because of the technical ways proof-of-stake works. The  mechanism is similar to how holding money in a bank helps ensure that banks can continue to stimulate economic activity.
 
-The more GRC one holds and keeps available for staking on an active GridCoin full node, the more blocks they will stake, and the more GRC they will earn. Similar to logic: the more $$$ I put in the bank, the more $$$ I will earn through interest.
+The more GRC one holds and keeps available for staking on an active GridCoin full node, the more blocks they will stake, and the more GRC they will earn. This is similar to the following logic: the more $$$ I put in the bank, the more $$$ I will earn through interest.
 
 ##### ERR
 
@@ -242,7 +242,7 @@ View it like so: The protocol mints a chunk of GRC to distribute to network part
 
 ### The Gridcoin Foundation
 
-The Gridcoin Foundation is a community-managed wallet of ~30 million GRC.The Gridcoin
+The Gridcoin Foundation is a community-managed wallet of ~30 million GRC. The Gridcoin
 Foundation’s expressed purpose is to support the development of the Gridcoin protocol and
 growth of the Gridcoin network.
 
@@ -662,8 +662,8 @@ Reddit
 Discord
 <https://discord.gg/jf9XX4a>
 
-Slack @todo: this link needs to be fixed
-<https://join.slack.com/t/teamgridcoin/shared_invite/enQtMjk2NTI4MzAwMzg0LTUzMmY0YjdiNzYxYzQ0MDc3MGE1NjQ3Nzg2NWMzZTUzMjAwZjdhMWI1YWUzMDE4YzQyZjVjMjMzOTc1MRmMmM>
+Slack
+<https://join.slack.com/t/teamgridcoin/shared_invite/enQtMjk2NTI4MzAwMzg0LTE4N2I3ZWZjYWJlZGM1Zjg3MTUyMDhiN2M5NmRmZTA2NDA0ZmY1ZTFmOGM3ZGU2YTBkOTdhNTk2ZjkzMGZkODY>
 
 Medium
 <https://medium.com/@gridcoinnetwork>

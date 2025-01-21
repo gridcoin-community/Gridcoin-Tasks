@@ -1,0 +1,33 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      WHITEPAPER_FORMATS_DIR: whitepaper/formats
+      WHITEPAPER_FILE_NAME_ROOT: gridcoin-whitepaper-draft
+      WHITEPAPER_ARTIFACT_NAME: gridcoin-whitepaper
+    steps:
+    - uses: actions/checkout@v2
+    - name: Update package manager and install o/s level dependencies
+      run: sudo apt update && sudo apt install nodejs npm
+    - name: Install secondary dependencies; '--unsafe-perm' is necessary due to https://github.com/BlueHatbRit/mdpdf/issues/69
+      run: sudo npm install --unsafe-perm mdpdf -g
+    - name: Checkout the project source code
+      run: git checkout
+    - name: List current workspace checkout
+      run: ls -ail ${{ github.workspace }}/whitepaper/ && git status
+    - name: Create the build directory
+      run: mkdir -p ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}
+    - name: Create the pdf-format whitepaper from the markdown source code
+      run: |
+        cd ${{ github.workspace }}/whitepaper && \
+        mdpdf ${{ env.WHITEPAPER_FILE_NAME_ROOT }}.md && \
+        mv ${{ env.WHITEPAPER_FILE_NAME_ROOT }}.pdf ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}/${{ env.WHITEPAPER_ARTIFACT_NAME }}.pdf
+    - uses: actions/upload-artifact@v1
+      with:
+        name: ${{ env.WHITEPAPER_ARTIFACT_NAME }}
+        path: ${{ github.workspace }}/build/${{ env.WHITEPAPER_FORMATS_DIR }}
